@@ -1,0 +1,17 @@
+threshold: 0.90
+
+steps:
+  - name: install
+    command: python -m pip install -r requirements.txt
+
+  - name: train
+    command: python train.py
+
+  - name: evaluate
+    command: python evaluate.py
+
+  - name: validate
+    command: validate
+
+  - name: deploy
+    command: deploy
